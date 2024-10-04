@@ -5,12 +5,20 @@ body {
   margin: 0;
 }
 
-header, nav {
+header {
   height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.logo {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .row_nav {
@@ -19,14 +27,15 @@ header, nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #FAA432;
 }
 
-.row_nav_icon {
+.height_nav {
   height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 
 .nav_centre {
@@ -35,7 +44,119 @@ header, nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: brown;
+}
+
+.nav_premier {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.col1 {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.col2_icones {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.col_icones {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row_nav_deuximes {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sect1 {
+  background-image: url(../Images/section1/fond.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.titre_sect1 {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titre1_sect1 {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#butt1:hover {
+  background-color: chartreuse;
+  border: none;
+}
+
+#img1 {
+  height: 800px;
+  width: auto;
+  position: absolute;
+}
+
+#butt1 {
+  position: relative;
+  border-radius: 40px;
+  width: 180px;
+  height: 60px;
+  z-index: 1;
+}
+
+.col_bouton {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sect1col1 {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row_sect1 {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sect2 {
+  height: 40vh;
+  width: 100%;
 }
 
 /*!
@@ -3814,7 +3935,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-color: #FAA432;
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
@@ -12003,4 +12124,40 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-color: #FAA432;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+.nav-item {
+  display: block;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .nav-item {
+    margin-top: 0;
+  }
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+}
+.nav-link:hover {
+  background-color: #e2e6ea;
+}
+.nav-link.active {
+  color: orange;
 }/*# sourceMappingURL=style.css.map */
